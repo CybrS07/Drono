@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DRONO</title>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+    <header>
+        <img src="/resources/pngwing.com.png" alt="icon">
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+        <button><a href="/html/register.html">Register</a></button>
+    </header>
+
+    <div class="cvc">
+        <div class="a1">
+            <img src="/resources/pngwing.com.png" alt="icon">
+            <h1>Login</h1>
+        </div>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <input type="text" id="loginUsername" name="username" required>
+                <label for="loginUsername">Username</label>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="loginPassword" name="password" required>
+                <label for="loginPassword">Password</label>
+                <button type="button" class="show-password-btn" onclick="togglePassword('loginPassword')">Show</button>
+            </div>
+
+            <p>Don't Have Account? <a href="register.html">Register</a></p>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="c1">
+            <h3>Contact Us</h3>
+        </div>
+        <div class="c1">
+            <h3>Quick Links</h3>
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </nav>
+        </div>
+        <p>© 2024 DRONO. All rights reserved.</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
