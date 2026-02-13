@@ -1,0 +1,239 @@
+/* COMMON STYLES (for both pages) */
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c2c2c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER STYLES */
+header {
+    display: flex;
+    margin: 5px auto;
+    margin-top: 1%;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    background-color: #252525;
+    border: 1px solid white;
+}
+
+header nav {
+    display: flex;
+    gap: 25px;
+}
+
+header nav li a {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    transition: transform 0.2s;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav li:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(1px 2px 2px rgba(1, 225, 255, 0.87));
+}
+
+header button a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+header button {
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header img {
+    filter: drop-shadow(0px 6px 10px rgba(255, 255, 255, 0.7));
+    height: 30px;
+    cursor: pointer;
+}
+
+/* LOGIN FORM CONTAINER */
+.cvc {
+    width: 40%;
+    min-width: 350px;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.a1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.a1 img {
+    height: 40px;
+}
+
+.a1 h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #252525;
+}
+
+/* LOGIN FORM STYLES */
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.form-group input {
+    width: calc(100% - 60px);
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label {
+    top: -5px;
+    font-size: 12px;
+    color: #252525;
+    font-weight: 500;
+}
+
+/* SHOW PASSWORD BUTTON (LOGIN) */
+.show-password-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.show-password-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* LOGIN BUTTON */
+#loginForm button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #252525;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#loginForm button[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* LINK STYLING */
+#loginForm p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#loginForm a {
+    color: #252525;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#loginForm a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: #252525;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid white;
+    margin-top: auto;
+}
+
+footer .c1 {
+    display: inline-block;
+    width: 33%;
+    padding: 20px;
+    color: white;
+    vertical-align: top;
+}
+
+footer p {
+    color: white;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 2px solid white;
+    margin-top: 20px;
+}
+
+footer nav li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+footer nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer nav li a:hover {
+    color: #cccccc;
+}
